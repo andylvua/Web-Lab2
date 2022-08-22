@@ -1,5 +1,5 @@
 let root = $('html');
-$('#toggle_theme').click(function() {
+$('#theme_toggle').click(function() {
     console.log('Toggling theme');
     console.log(root.attr('class'));
 
