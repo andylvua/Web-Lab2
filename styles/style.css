@@ -164,21 +164,28 @@ header a.active {
 
 
 /*SECTION [HOME]*/
-.home {
-    width: 75vw;
-    height: calc(75vh - 90px);
-    margin: 15vh auto 10vh;
+#home {
+    width: 100%;
     justify-content: center;
     display: flex;
 }
 
-.home .app {
+#home .container {
+    width: 75vw;
+    margin: 15vh auto 10vh;
+    height: calc(75vh - 90px);
+    justify-content: center;
+    display: flex;
+
+}
+
+#home .app {
     max-width: 481px;
     margin-top: 100px;
     margin-right: 100px;
 }
 
-.home .app h1 {
+#home .app h1 {
     color: var(--color-text-primary);
     font-weight: 700;
     font-size: 36px;
@@ -186,7 +193,7 @@ header a.active {
     font-family: 'Playfair Display', serif;
 }
 
-.home .app p {
+#home .app p {
     font-weight: 300;
     font-size: 17px;
     line-height: 30px;
@@ -213,17 +220,18 @@ header a.active {
 
 
 /*SECTION [TESTIMONIALS]*/
-.testimonials {
+#testimonials {
     background-color: var(--color-background-secondary);
     height: 100vh;
 }
 
-.testimonials h1 {
+#testimonials h1 {
     color: var(--color-text-primary);
     font-weight: 700;
     font-size: 32px;
     font-family: 'Playfair Display', serif;
-    padding-top: 130px;
+    margin-top: 0;
+    padding-top: 160px;
     padding-bottom: 30px;
 }
 
@@ -282,10 +290,11 @@ header a.active {
 
 
 /*SECTION [TRENDING STORIES] */
-.trending-stories {
+#trending-stories {
     height: 100vh;
 }
-.trending-stories .section-header {
+
+#trending-stories .section-header {
     color: var(--color-text-primary);
     display: flex;
     align-items: center;
@@ -294,7 +303,7 @@ header a.active {
     transition: none;
 }
 
-.trending-stories .section-header h1 {
+#trending-stories .section-header h1 {
     font-weight: 700;
     font-size: 32px;
     font-family: 'Playfair Display', serif;
