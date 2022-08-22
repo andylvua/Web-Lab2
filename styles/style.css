@@ -54,6 +54,7 @@ header .container {
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header a {
@@ -124,7 +125,6 @@ header a.active {
     height: 100%;
     margin: 14vh auto;
     display: flex;
-    justify-content: space-between;
 }
 
 .home .app {
@@ -163,7 +163,7 @@ header a.active {
 }
 
 .home .image img {
-    max-width: 550px;
+    max-height: 100%;
 }
 
 .theme_toogle {
