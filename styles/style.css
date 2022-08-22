@@ -1,14 +1,37 @@
 /** { border: 1px solid #ff0000; }*/
 
+html {
+    scroll-behavior: smooth;
+}
+
+html.light {
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #F8F8F8;
+    --color-text-primary: #000000;
+    --color-text-secondary: #7D7987;
+    --color-text-header: #B8BECD;
+    --color-text-footer: #848484;
+    --svg-invertion: invert(0);
+}
+
+html.dark {
+    --color-background-primary: #000000;
+    --color-background-secondary: #111111;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #7D7987;
+    --color-text-header: #B8BECD;
+    --color-text-footer: #a6a6a6;
+    --svg-invertion: invert(0.7);
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
 
 /*BODY*/
 body {
-    background-color: #ffffff;
+    background-color: var(--color-background-primary);
     margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 
@@ -17,10 +40,11 @@ header {
     overflow: hidden;
     padding: 10px 10px;
     position: sticky;
-    background-color: white;
+    background-color: var(--color-background-primary);
     margin-top: 30px;
     top: 0;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 header .container {
@@ -33,7 +57,7 @@ header .container {
 }
 
 header a {
-    color: #B8BECD;
+    color: var(--color-text-header);
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -41,7 +65,7 @@ header a {
     border-radius: 4px;
     line-height: 40px;
     padding: 0 10px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 header .logo {
@@ -72,7 +96,7 @@ header .register:hover, header .login:hover {
 
 header .login {
     color: #FB8F1D;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 header a:hover {
@@ -80,7 +104,7 @@ header a:hover {
 }
 
 header a.active {
-    color: black;
+    color: var(--color-text-primary);
 }
 
 .header-left {
@@ -110,6 +134,7 @@ header a.active {
 }
 
 .home .app h1 {
+    color: var(--color-text-primary);
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 0;
@@ -120,7 +145,7 @@ header a.active {
     font-weight: 300;
     font-size: 17px;
     line-height: 30px;
-    color: #7D7987;
+    color: var(--color-text-secondary);
     font-family: 'Mulish', sans-serif;
 }
 
@@ -141,14 +166,58 @@ header a.active {
     max-width: 550px;
 }
 
+.theme_toogle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 62px;
+    height: 32px;
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    background: #252525;
+    transition: background-color ease 0.3s;
+}
+.theme_toogle::before {
+    content: url("https://shivanarrthine.com/public/images/icons/moon.svg");
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    background: #5e5e5e;
+    left: 5px;
+    top: 4px;
+    border-radius: 50%;
+    text-indent: 4px;
+    line-height: 32px;
+    word-spacing: 37px;
+    white-space: nowrap;
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+.theme_toogle:checked {
+    background-color: #eaeaea;
+    border-color: #fff;
+}
+.theme_toogle:checked::before {
+    left: 33px;
+    content: url("https://shivanarrthine.com/public/images/icons/sun.svg");
+    background: #fff;
+}
+
 
 /*SECTION [TESTIMONIALS]*/
 .testimonials {
-    background-color: #F8F8F8;
+    background-color: var(--color-background-secondary);
     height: 100vh;
 }
 
 .testimonials h1 {
+    color: var(--color-text-primary);
     font-weight: 700;
     font-size: 32px;
     font-family: 'Playfair Display', serif;
@@ -180,7 +249,9 @@ header a.active {
 }
 
 .testimonial-text {
+    color: var(--color-text-primary);
     width: 550px;
+    transition: none;
 }
 
 .testimonial-description{
@@ -213,10 +284,12 @@ header a.active {
     height: 100vh;
 }
 .trending-stories .section-header {
+    color: var(--color-text-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 100px;
+    transition: none;
 }
 
 .trending-stories .section-header h1 {
@@ -274,6 +347,7 @@ header a.active {
 }
 
 .story-title{
+    color: var(--color-text-primary);
     font-family: "Inter", sans-serif;
     font-size: 17px;
     font-weight: 700;
@@ -287,7 +361,7 @@ header a.active {
     font-size: 14px;
     font-weight: 300;
     line-height: 25px;
-    color: #7D7987;
+    color: var(--color-text-secondary);
     margin-bottom: 20px;
 }
 
@@ -302,7 +376,7 @@ header a.active {
 
 /*FOOTER*/
 .footer {
-    background-color: #F9F9FB;
+    background-color: var(--color-background-secondary);
     display: inline-block;
     width: 100%;
 }
@@ -327,7 +401,7 @@ header a.active {
 
 .copyright {
     font-family: "Mulish", sans-serif;
-    color: #848484;
+    color: var(--color-text-footer);
     font-size: 16px;
     font-weight: 200;
 }
@@ -343,4 +417,5 @@ header a.active {
 
 .link img {
     width: auto;
+    filter: var(--svg-invertion);
 }
