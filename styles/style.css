@@ -122,8 +122,9 @@ header a.active {
 /*SECTION [HOME]*/
 .home {
     width: 75vw;
-    height: 100%;
-    margin: 14vh auto;
+    height: calc(75vh - 90px);
+    margin: 15vh auto 10vh;
+    justify-content: center;
     display: flex;
 }
 
