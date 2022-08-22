@@ -13,7 +13,7 @@ html {
 
 
 /*HEADER*/
-.header {
+header {
     overflow: hidden;
     padding: 10px 10px;
     position: sticky;
@@ -23,7 +23,7 @@ html {
     z-index: 1;
 }
 
-.header .container {
+header .container {
     width: 78vw;
     height: 5vh;
     margin-left: auto;
@@ -32,7 +32,7 @@ html {
     justify-content: space-between;
 }
 
-.header a {
+header a {
     color: #B8BECD;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -44,12 +44,12 @@ html {
     transition: all 0.2s ease-in-out;
 }
 
-.header .logo {
+header .logo {
     display: flex;
     align-items: center;
 }
 
-.header .login, .header .register, .app .download {
+header .login, header .register, .app .download {
     width: 132px;
     height: 44px;
     border: 1px solid #FB8F1D;
@@ -61,25 +61,25 @@ html {
     margin-left: 14px;
 }
 
-.header .register, .app .download {
+header .register, .app .download {
     background-color: #FB8F1D;
     color: #fff;
 }
 
-.header .register:hover, .header .login:hover {
+header .register:hover, header .login:hover {
     transform: scale(1.05);
 }
 
-.header .login {
+header .login {
     color: #FB8F1D;
     background-color: #ffffff;
 }
 
-.header a:hover {
+header a:hover {
     color: #FB8F1D;
 }
 
-.header a.active {
+header a.active {
     color: black;
 }
 
