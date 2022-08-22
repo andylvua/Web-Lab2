@@ -130,7 +130,8 @@ header a.active {
     width: 62px;
     height: 32px;
     position: absolute;
-    top: 20%;
+    top: calc(50% - 16px);
+    margin-top: 0;
     right: 1%;
     border-radius: 50px;
     overflow: hidden;
