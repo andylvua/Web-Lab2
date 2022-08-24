@@ -32,6 +32,7 @@ html.dark {
 body {
     background-color: var(--color-background-primary);
     margin: 0;
+    overflow-x: hidden;
 }
 
 
