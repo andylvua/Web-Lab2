@@ -336,7 +336,7 @@ header a.active {
 
 /*SECTION [TRENDING STORIES] */
 #trending-stories {
-    height: 100vh;
+    height: auto;
 }
 
 #trending-stories .section-header {
