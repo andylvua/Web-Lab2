@@ -305,7 +305,6 @@ header a.active {
 
 .testimonial-text {
     color: var(--color-text-primary);
-    width: 550px;
     transition: none;
 }
 
@@ -316,6 +315,7 @@ header a.active {
     width: 80%;
     line-height: 36px;
 }
+
 .author {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -330,7 +330,7 @@ header a.active {
 
 .photo img{
     border-radius: 10px;
-    width: 350px
+    width: 25vw;
 }
 
 
