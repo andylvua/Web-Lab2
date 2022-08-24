@@ -7,6 +7,8 @@
     <link rel="icon" href="images/logo.png">
 </head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +19,6 @@
 
 <body>
 <header>
-    <div class="container">
-    <nav class="header-left">
-        <a class="home" href="#">Home</a>
-        <a class="testimonials" href="#testimonials">Testimonials</a>
-        <a class="trending-stories" href="#trending-stories">Trending stories</a>
-    </nav>
-
     <a class="logo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
         <svg viewBox="0 0 10 10" width="44px">
             <circle cx="5" cy="5" r="3.7" stroke-width="2" stroke="#1ABE84" fill="#fff"/>
@@ -31,10 +26,25 @@
         </svg>
     </a>
 
-    <nav class="header-right">
+    <nav>
+    <div class="header-left">
+        <a class="home" href="#">Home</a>
+        <a class="testimonials" href="#testimonials">Testimonials</a>
+        <a class="trending-stories" href="#trending-stories">Trending stories</a>
+    </div>
+
+    <div class="header-right">
         <button class="login">Login</button>
         <button class="register">Register</button>
+    </div>
     </nav>
+
+    <div class="hamburger-menu-wrapper">
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </div>
 
     <label>
@@ -42,10 +52,11 @@
     </label>
 </header>
 
+
 <section class="home" id="home">
     <div class="container">
         <div class="app">
-            <h1>Guides by Thousand <br> Sunny</h1>
+            <h1>Guides by Thousand <span><br></span> Sunny</h1>
 
             <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the
                 ultimate resource before and during a trip.</p>
@@ -58,6 +69,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="testimonials" id="testimonials">
     <div class="container">
@@ -91,6 +103,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="trending-stories" id="trending-stories">
     <div class="container">
@@ -137,6 +150,7 @@
     </div>
 </section>
 
+
 <footer>
     <div class="container">
             <div class="footer-content">
@@ -170,9 +184,11 @@
     </div>
 </footer>
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts/navigation.js"></script>
 <script src="scripts/theme_toggle.js"></script>
+
 
 </body>
 </html>

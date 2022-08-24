@@ -32,6 +32,7 @@ html.dark {
 body {
     background-color: var(--color-background-primary);
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -45,17 +46,25 @@ header {
     top: 0;
     z-index: 1;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header .container {
+header nav {
+    position: relative;
     width: 78vw;
     height: 5vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+
+nav.open .header-left, nav.open .header-right {
+    transform: translateX(0);
+}
+
 
 header a {
     color: var(--color-text-header);
@@ -67,10 +76,6 @@ header a {
     line-height: 40px;
     padding: 0 10px;
     transition: all 0.3s ease-in-out;
-}
-
-header a:first-child {
-    margin-left: -10px;
 }
 
 header .logo {
@@ -87,7 +92,12 @@ header .login, header .register, .app .download {
     font-weight: 300;
     font-size: 15px;
     transition: all 0.2s ease-in-out;
-    margin-left: 14px;
+}
+
+header .register {
+    right: 0;
+    margin-right: 10px;
+    margin-left: 15px;
 }
 
 header .register, .app .download {
@@ -113,15 +123,45 @@ header a.active {
 }
 
 .header-left {
-    width: 340px;
+    display: flex;
+}
+
+.logo {
+    position: absolute;
+    justify-content: center;
 }
 
 .header-right {
-    width: 340px;
-    display: inline;
-    text-align: right;
+    display: flex;
+    position: absolute;
+    right: 0;
 }
 
+
+.hamburger-menu-wrapper {
+    cursor: pointer;
+    margin-right: 1%;
+    display: none;
+}
+
+.hamburger-menu {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.hamburger-menu .line {
+    background-color: #202336;
+    height: 3px;
+    width: 100%;
+    border-radius: 1rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
 .theme_toggle {
     -webkit-appearance: none;
@@ -177,17 +217,18 @@ header a.active {
 
 #home .container {
     width: 75vw;
-    margin: 15vh auto 10vh;
-    height: calc(75vh - 90px);
+    margin: auto auto;
+    height: calc(95vh - 50px);
     justify-content: center;
     display: flex;
-
+    align-items: center;
 }
 
 #home .app {
-    max-width: 481px;
-    margin-top: 100px;
+    max-width: 480px;
     margin-right: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 #home .app h1 {
@@ -208,8 +249,6 @@ header a.active {
 
 .app .download {
     font-weight: 400;
-    left: 0;
-    margin-left: 0;
     margin-top: 10px;
     width: 164px;
     height: 48px;
@@ -220,7 +259,8 @@ header a.active {
 }
 
 .home .image img {
-    max-height: 100%;
+    max-height: 70vh;
+    max-width: 100%;
 }
 
 
@@ -265,7 +305,6 @@ header a.active {
 
 .testimonial-text {
     color: var(--color-text-primary);
-    width: 550px;
     transition: none;
 }
 
@@ -276,6 +315,7 @@ header a.active {
     width: 80%;
     line-height: 36px;
 }
+
 .author {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -290,13 +330,13 @@ header a.active {
 
 .photo img{
     border-radius: 10px;
-    width: 350px
+    width: 25vw;
 }
 
 
 /*SECTION [TRENDING STORIES] */
 #trending-stories {
-    height: 100vh;
+    height: auto;
 }
 
 #trending-stories .section-header {
@@ -343,13 +383,15 @@ header a.active {
 
 .stories{
     display: flex;
+    flex-wrap: wrap;
     grid-gap: 23px;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 10vh;
 }
 
 .story {
-    width: 100%;
+    flex: 1 1 210px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     position: relative;
@@ -378,15 +420,17 @@ header a.active {
     font-weight: 300;
     line-height: 25px;
     color: var(--color-text-secondary);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .read-more{
+    position: absolute;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: #FB8F1D;
     text-decoration: none;
+    bottom: 0;
 }
 
 
@@ -434,4 +478,308 @@ footer {
 .link img {
     width: auto;
     filter: var(--svg-invertion);
+}
+
+
+@media screen and (min-width: 2160px) {
+    header a {
+        font-size: 25px;
+    }
+
+    header .logo {
+        transform: scale(1.2);
+    }
+
+    header .login, header .register {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+
+    #home .app {
+        max-width: 570px;
+    }
+
+    #home .app h1 {
+        font-size: 60px;
+    }
+
+    #home .app p {
+        font-size: 28px;
+    }
+
+    #home .app .download {
+        height: 60px;
+        width: 205px;
+        font-size: 20px;
+    }
+
+
+    #testimonials .container h1 {
+        font-size: 60px;
+    }
+
+    .rating img {
+        width: 30px;
+    }
+
+    .testimonial-description {
+        font-size: 28px;
+    }
+
+    .author {
+        font-size: 28px;
+    }
+
+    .job-title {
+        font-size: 22px;
+    }
+
+
+    #trending-stories {
+        height: 80vh;
+    }
+    #trending-stories .section-header h1 {
+        font-size: 60px;
+    }
+
+    .view-all {
+        font-size: 22px;
+        background-position: right 5px bottom 7px !important;
+    }
+
+    .story-title {
+        font-size: 22px;
+    }
+
+    .story-description {
+        font-size: 18px;
+    }
+
+    .read-more {
+        font-size: 18px;
+    }
+
+
+    footer a {
+        transform: scale(1.2);
+    }
+
+    footer .copyright {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /*Disable theme button [temporary]*/
+    .theme_toggle {
+        display: none;
+    }
+
+    .hamburger-menu-wrapper {
+        display: block;
+    }
+
+    /*HEADER*/
+    header {
+        margin-top: 0;
+    }
+
+    .header-left {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60vw;
+        height: 100vh;
+        background-color: var(--color-background-secondary);
+        z-index: 2;
+        transform: translateX(60vw);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .header-left a {
+        margin-left: 1rem;
+    }
+
+    .header-left a:first-child {
+        margin-top: 10vh;
+    }
+
+    .header-right {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 3vh;
+        margin-right: calc(30vw - 132px/2);
+        z-index: 2;
+        transform: translateX(60vw);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .header-right .register {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .header-left, .header-right {
+        flex-direction: column;
+    }
+
+
+    /*HOME*/
+    #home .container {
+        flex-direction: column;
+        margin: 5vh 0 0;
+        height: 100%;
+    }
+
+    .container .app {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .container .image {
+        margin: 5vh 0;
+    }
+
+    .app .download {
+        align-self: center;
+    }
+
+
+    /*TESTIMONIALS*/
+    #testimonials * {
+    }
+
+    .testimonials-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    .photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .testimonial-description {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 18px;
+    }
+
+    .job-title {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .footer-content a {
+        display: none;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #home .app {
+        text-align: center;
+    }
+
+    .app h1 span {
+        display: none;
+    }
+
+    #testimonials h1{
+        padding-top: 100px;
+    }
+    .testimonials-content {
+        flex-direction: column-reverse;
+    }
+
+    .testimonial-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rating {
+        margin-top: 20px;
+    }
+    .rating img{
+        max-width: 15px;
+    }
+    .testimonial-description {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .photo img{
+        width: 80%;
+
+    }
+
+    .author {
+        font-size: 18px;
+    }
+
+    .job-title {
+        font-size: 15px;
+    }
+
+
+    /*[temporary]*/
+    /*#trending-stories {*/
+    /*    height: auto;*/
+    /*}*/
+    /*.trending-stories .container *{*/
+    /*    border: #FB8F1D solid 1px;*/
+    /*}*/
+
+    #trending-stories .section-header {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    header .logo {
+        max-width: 35px;
+    }
+    #home .app h1 {
+        font-size: 25px;
+    }
+
+    #home .app p {
+        font-size: 15px;
+    }
+
+    #testimonials {
+        height: 130vh;
+    }
+
+    #trending-stories .section-header h1 {
+        font-size: 25px;
+    }
+
+    footer .copyright {
+        font-size: 11px;
+    }
 }
