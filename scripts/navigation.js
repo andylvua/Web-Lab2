@@ -29,3 +29,11 @@ window.onscroll = () => {
         }
     });
 };
+
+
+let hamburger_menu = document.querySelector('.hamburger-menu-wrapper')
+hamburger_menu.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    $('nav').toggleClass('open');
+}
