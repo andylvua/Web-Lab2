@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    --app-height: 100%;
 }
 
 html.light {
@@ -265,11 +266,12 @@ header a.active {
 
 
 /*SECTION [TESTIMONIALS]*/
+
+/*noinspection CssOverwrittenProperties*/
 #testimonials {
     background-color: var(--color-background-secondary);
     height: 100vh;
-    /*noinspection CssInvalidPropertyValue*/
-    height: -webkit-fill-available; /* Safari 10.1+ height property fix */
+    height: var(--app-height);
 }
 
 #testimonials h1 {
