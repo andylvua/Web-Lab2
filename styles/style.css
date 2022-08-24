@@ -51,15 +51,20 @@ header {
     align-items: center;
 }
 
-header .container {
+header nav {
+    position: relative;
     width: 78vw;
     height: 5vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+
+nav.open .header-left, nav.open .header-right {
+    transform: translateX(0);
+}
+
 
 header a {
     color: var(--color-text-header);
