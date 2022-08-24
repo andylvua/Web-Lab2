@@ -132,11 +132,36 @@ header a.active {
 }
 
 .header-right {
-    width: 340px;
-    display: inline;
-    text-align: right;
+    display: flex;
+    position: absolute;
+    right: 0;
 }
 
+
+.hamburger-menu-wrapper {
+    cursor: pointer;
+    margin-right: 1%;
+    display: none;
+}
+
+.hamburger-menu {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.hamburger-menu .line {
+    background-color: #202336;
+    height: 3px;
+    width: 100%;
+    border-radius: 1rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
 .theme_toggle {
     -webkit-appearance: none;
