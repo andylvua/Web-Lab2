@@ -6,24 +6,24 @@
 #trending-stories .section-header {
     color: var(--color-text-primary);
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding-top: 100px;
     transition: none;
 }
 
 #trending-stories .section-header h1 {
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 32px;
-    font-family: 'Playfair Display', serif;
 }
 
 .view-all {
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 17px;
     color: #FB8F1D;
     text-decoration: none;
-    font-weight: 500;
     padding-right: 20px;
     background-image: url(
     "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' \
@@ -47,18 +47,18 @@
 
 .stories{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     grid-gap: 23px;
-    justify-content: center;
     margin-top: 30px;
     margin-bottom: 10vh;
 }
 
 .story {
+    position: relative;
     flex: 1 1 210px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
-    position: relative;
 }
 
 .story img{
@@ -69,19 +69,19 @@
 }
 
 .story-title{
-    color: var(--color-text-primary);
     font-family: "Inter", sans-serif;
-    font-size: 17px;
     font-weight: 700;
+    font-size: 17px;
     line-height: 27px;
+    color: var(--color-text-primary);
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
 .story-description {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
     font-weight: 300;
+    font-size: 14px;
     line-height: 25px;
     color: var(--color-text-secondary);
     margin-bottom: 50px;
@@ -90,8 +90,8 @@
 .read-more{
     position: absolute;
     font-family: "Inter", sans-serif;
-    font-size: 14px;
     font-weight: 500;
+    font-size: 14px;
     color: #FB8F1D;
     text-decoration: none;
     bottom: 0;
