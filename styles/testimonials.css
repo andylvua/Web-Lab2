@@ -1,0 +1,71 @@
+/*SECTION [TESTIMONIALS]*/
+/*noinspection CssOverwrittenProperties*/
+
+#testimonials {
+    background-color: var(--color-background-secondary);
+    height: 100vh;
+    height: var(--app-height);
+}
+
+#testimonials h1 {
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    padding-top: 160px;
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials-content{
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    margin-top: 80px;
+}
+
+.rating img {
+    width: 23px;
+    margin-right: 15px;
+}
+
+.testimonial-text {
+    color: var(--color-text-primary);
+    transition: none;
+}
+
+.testimonial-description{
+    font-size: 22px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    width: 80%;
+    line-height: 36px;
+}
+
+.author {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.job-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.photo img{
+    border-radius: 10px;
+    width: 25vw;
+}

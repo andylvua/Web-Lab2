@@ -1,0 +1,302 @@
+@media screen and (min-width: 2160px) {
+    header a {
+        font-size: 25px;
+    }
+
+    header .logo {
+        transform: scale(1.2);
+    }
+
+    header .login, header .register {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+
+    #home .app {
+        max-width: 570px;
+    }
+
+    #home .app h1 {
+        font-size: 60px;
+    }
+
+    #home .app p {
+        font-size: 28px;
+    }
+
+    #home .app .download {
+        height: 60px;
+        width: 205px;
+        font-size: 20px;
+    }
+
+
+    #testimonials .container h1 {
+        font-size: 60px;
+    }
+
+    .rating img {
+        width: 30px;
+    }
+
+    .testimonial-description {
+        font-size: 28px;
+    }
+
+    .author {
+        font-size: 28px;
+    }
+
+    .job-title {
+        font-size: 22px;
+    }
+
+
+    #trending-stories {
+        height: 80vh;
+    }
+    #trending-stories .section-header h1 {
+        font-size: 60px;
+    }
+
+    .view-all {
+        font-size: 22px;
+        background-position: right 5px bottom 7px !important;
+    }
+
+    .story-title {
+        font-size: 22px;
+    }
+
+    .story-description {
+        font-size: 18px;
+    }
+
+    .read-more {
+        font-size: 18px;
+    }
+
+
+    footer a {
+        transform: scale(1.2);
+    }
+
+    footer .copyright {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /*Disable theme button [temporary]*/
+    .theme_toggle {
+        display: none;
+    }
+
+    .hamburger-menu-wrapper {
+        display: block;
+    }
+
+    /*HEADER*/
+    header {
+        margin-top: 0;
+    }
+
+    .header-left {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60vw;
+        height: 100vh;
+        background-color: var(--color-background-secondary);
+        z-index: 2;
+        transform: translateX(60vw);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .header-left a {
+        margin-left: 1rem;
+    }
+
+    .header-left a:first-child {
+        margin-top: 10vh;
+    }
+
+    .header-right {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 3vh;
+        margin-right: calc(30vw - 132px/2);
+        z-index: 2;
+        transform: translateX(60vw);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .header-right .register {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .header-left, .header-right {
+        flex-direction: column;
+    }
+
+
+    /*HOME*/
+    #home .container {
+        flex-direction: column;
+        margin: 5vh 0 0;
+        height: 100%;
+    }
+
+    .container .app {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .container .image {
+        margin: 5vh 0;
+    }
+
+    .app .download {
+        align-self: center;
+    }
+
+
+    /*TESTIMONIALS*/
+    #testimonials * {
+    }
+
+    .testimonials-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    .photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .testimonial-description {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 18px;
+    }
+
+    .job-title {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .footer-content a {
+        display: none;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #home .app {
+        text-align: center;
+    }
+
+    .app h1 span {
+        display: none;
+    }
+
+    #testimonials h1{
+        padding-top: 100px;
+    }
+    .testimonials-content {
+        flex-direction: column-reverse;
+    }
+
+    .testimonial-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rating {
+        margin-top: 20px;
+    }
+    .rating img{
+        max-width: 15px;
+    }
+    .testimonial-description {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .photo img{
+        width: 80%;
+
+    }
+
+    .author {
+        font-size: 18px;
+    }
+
+    .job-title {
+        font-size: 15px;
+    }
+
+
+    /*[temporary]*/
+    /*#trending-stories {*/
+    /*    height: auto;*/
+    /*}*/
+    /*.trending-stories .container *{*/
+    /*    border: #FB8F1D solid 1px;*/
+    /*}*/
+
+    #trending-stories .section-header {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    header .logo {
+        max-width: 35px;
+    }
+    #home .app h1 {
+        font-size: 25px;
+    }
+
+    #home .app p {
+        font-size: 15px;
+    }
+
+    #testimonials {
+        height: 130vh;
+    }
+
+    #trending-stories .section-header h1 {
+        font-size: 25px;
+    }
+
+    footer .copyright {
+        font-size: 11px;
+    }
+}

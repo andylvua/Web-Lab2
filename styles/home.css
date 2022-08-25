@@ -1,0 +1,54 @@
+/*SECTION [HOME]*/
+#home {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+#home .container {
+    width: 75vw;
+    margin: auto auto;
+    height: calc(95vh - 50px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#home .app {
+    max-width: 480px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#home .app h1 {
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+#home .app p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--color-text-secondary);
+    font-family: 'Mulish', sans-serif;
+}
+
+.app .download {
+    font-weight: 400;
+    margin-top: 10px;
+    width: 164px;
+    height: 48px;
+}
+
+.app .download:hover {
+    transform: scale(1.05);
+}
+
+.home .image img {
+    max-height: 70vh;
+    max-width: 100%;
+}
