@@ -13,7 +13,7 @@
 - [x] The header should collapse to a hamburger on small screens.
 - [x] The website must contain animations (at least 3). Can be made in any possible way, preferably with css properties.
 - [x] Your project should be logically structured (all your CSS can’t be in just one-two files)
-- [x] All of the previous work requirements must be kept.
+- [x] All the previous work requirements must be kept.
 
 > An example website is also provided (from Live coding): https://github.com/NazarGorokhivskiy/LandingForLiveCoding
 
@@ -23,7 +23,7 @@
 **The website is displayed correctly on 4k displays and on any mobile devices.**
 > **Note**
 >
-> Smart wathes are not supported
+> Smart watches are not supported
 
 #### All 4k displays. Viewport 3840x2160:
 <img width="1110" alt="image" src="https://user-images.githubusercontent.com/93153950/186672340-347da57a-0239-458b-8f77-41fa4ea1d167.png">
