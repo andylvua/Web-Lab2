@@ -1,16 +1,16 @@
 /*SECTION [HOME]*/
 #home {
     width: 100%;
-    justify-content: center;
     display: flex;
+    justify-content: center;
 }
 
 #home .container {
     width: 75vw;
     margin: auto auto;
     height: calc(95vh - 50px);
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -22,19 +22,19 @@
 }
 
 #home .app h1 {
-    color: var(--color-text-primary);
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 36px;
+    color: var(--color-text-primary);
     margin-bottom: 0;
-    font-family: 'Playfair Display', serif;
 }
 
 #home .app p {
+    font-family: 'Mulish', sans-serif;
     font-weight: 300;
     font-size: 17px;
     line-height: 30px;
     color: var(--color-text-secondary);
-    font-family: 'Mulish', sans-serif;
 }
 
 .app .download {
