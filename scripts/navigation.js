@@ -1,4 +1,6 @@
 // Make home section active by default
+// noinspection JSDeprecatedSymbols
+
 let home = document.querySelector("nav a");
 home.classList.add("active");
 

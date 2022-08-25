@@ -1,0 +1,156 @@
+/*HEADER*/
+header {
+    overflow: hidden;
+    padding: 10px 10px;
+    position: sticky;
+    background-color: var(--color-background-primary);
+    margin-top: 30px;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    position: relative;
+    width: 78vw;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav.open .header-left, nav.open .header-right {
+    transform: translateX(0);
+}
+
+
+header a {
+    color: var(--color-text-header);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    line-height: 40px;
+    padding: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .logo {
+    display: flex;
+}
+
+header .login, header .register, .app .download {
+    width: 132px;
+    height: 44px;
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .register {
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+header .register, .app .download {
+    background-color: #FB8F1D;
+    color: #fff;
+}
+
+header .register:hover, header .login:hover {
+    transform: scale(1.05);
+}
+
+header .login {
+    color: #FB8F1D;
+    background-color: transparent;
+}
+
+header a:hover {
+    color: #FB8F1D;
+}
+
+header a.active {
+    color: var(--color-text-primary);
+}
+
+.logo {
+    position: absolute;
+}
+
+.header-right {
+    position: absolute;
+    right: 0;
+}
+
+.hamburger-menu-wrapper {
+    cursor: pointer;
+    margin-right: 1%;
+    display: none;
+}
+
+.hamburger-menu {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.hamburger-menu .line {
+    background-color: #202336;
+    height: 3px;
+    width: 100%;
+    border-radius: 1rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.theme_toggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 62px;
+    height: 32px;
+    position: absolute;
+    top: calc(50% - 16px);
+    margin-top: 0;
+    right: 1%;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #252525;
+    transition: background-color ease 0.3s;
+}
+.theme_toggle::before {
+    content: url("https://shivanarrthine.com/public/images/icons/moon.svg");
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    background: #5e5e5e;
+    left: 5px;
+    top: 4px;
+    border-radius: 50%;
+    text-indent: 4px;
+    line-height: 32px;
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+.theme_toggle:checked {
+    background-color: #eaeaea;
+    border-color: #fff;
+}
+.theme_toggle:checked::before {
+    left: 33px;
+    content: url("https://shivanarrthine.com/public/images/icons/sun.svg");
+    background: #fff;
+}
