@@ -73,7 +73,8 @@
 
     /*TRENDING STORIES*/
     #trending-stories {
-        height: 100vh;
+        scroll-margin-bottom: 20vh;
+        height: 85vh;
     }
     #trending-stories .section-header h1 {
         font-size: 80px;
