@@ -1,4 +1,5 @@
 @media screen and (min-width: 2160px) {
+    /*HEADER*/
     header a {
         font-size: 25px;
     }
@@ -13,7 +14,7 @@
         font-size: 20px;
     }
 
-
+    /*HOME*/
     #home .app {
         max-width: 570px;
     }
@@ -33,6 +34,7 @@
     }
 
 
+    /*TESTIMONIALS*/
     #testimonials .container h1 {
         font-size: 60px;
     }
@@ -54,6 +56,7 @@
     }
 
 
+    /*TRENDING STORIES*/
     #trending-stories {
         height: 80vh;
     }
@@ -79,6 +82,7 @@
     }
 
 
+    /*FOOTER*/
     footer a {
         transform: scale(1.2);
     }
@@ -186,6 +190,7 @@
 
 
 @media screen and (max-width: 768px) {
+    /*TESTIMONIALS*/
     .testimonial-description {
         font-size: 20px;
     }
@@ -201,6 +206,7 @@
 
 
 @media screen and (max-width: 530px) {
+    /*FOOTER*/
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -218,6 +224,7 @@
 
 
 @media screen and (max-width: 450px) {
+    /*HOME*/
     #home .app {
         text-align: center;
     }
@@ -226,9 +233,11 @@
         display: none;
     }
 
+    /*TESTIMONIALS*/
     #testimonials h1{
         padding-top: 100px;
     }
+
     .testimonials-content {
         flex-direction: column-reverse;
     }
@@ -245,6 +254,7 @@
     .rating img{
         max-width: 15px;
     }
+
     .testimonial-description {
         font-size: 15px;
         line-height: 20px;
@@ -263,15 +273,7 @@
         font-size: 15px;
     }
 
-
-    /*[temporary]*/
-    /*#trending-stories {*/
-    /*    height: auto;*/
-    /*}*/
-    /*.trending-stories .container *{*/
-    /*    border: #FB8F1D solid 1px;*/
-    /*}*/
-
+    /*TRENDING STORIES*/
     #trending-stories .section-header {
         flex-direction: column;
     }
@@ -279,9 +281,12 @@
 
 
 @media screen and (max-width: 320px) {
+    /*HEADER*/
     header .logo {
         max-width: 35px;
     }
+
+    /*HOME*/
     #home .app h1 {
         font-size: 25px;
     }
@@ -290,14 +295,17 @@
         font-size: 15px;
     }
 
+    /*TESTIMONIALS*/
     #testimonials {
         height: 130vh;
     }
 
+    /*TRENDING STORIES*/
     #trending-stories .section-header h1 {
         font-size: 25px;
     }
 
+    /*FOOTER*/
     footer .copyright {
         font-size: 11px;
     }
