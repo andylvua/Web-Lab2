@@ -1,4 +1,135 @@
-@media screen and (min-width: 2160px) {
+@media screen and (min-width: 3840px) {
+    /*HEADER*/
+    header a {
+        font-size: 35px;
+        padding: 0 20px;
+    }
+
+    header .logo {
+        transform: scale(2.3);
+    }
+
+    header .login, header .register {
+        width: 240px;
+        height: 80px;
+        border-radius: 16px;
+        font-size: 25px;
+    }
+
+    .theme_toggle {
+        transform: scale(1.8);
+        right: 2%;
+    }
+
+    /*HOME*/
+    #home .app {
+        max-width: 800px;
+    }
+
+    #home .app h1 {
+        font-size: 80px;
+    }
+
+    #home .app p {
+        font-size: 35px;
+        line-height: 60px;
+    }
+
+    #home .app .download {
+        height: 80px;
+        width: 260px;
+        font-size: 25px;
+        border-radius: 16px;
+    }
+
+
+    /*TESTIMONIALS*/
+    #testimonials .container h1 {
+        font-size: 80px;
+    }
+
+    .rating img {
+        width: 50px;
+    }
+
+    .testimonial-description {
+        font-size: 40px;
+        max-width: 1500px;
+        line-height: 60px;
+    }
+
+    .author {
+        font-size: 40px;
+    }
+
+    .photo img {
+        border-radius: 30px;
+    }
+
+    .job-title {
+        font-size: 35px;
+    }
+
+
+    /*TRENDING STORIES*/
+    #trending-stories {
+        height: 100vh;
+    }
+    #trending-stories .section-header h1 {
+        font-size: 80px;
+    }
+
+    .view-all {
+        font-size: 22px;
+        padding-right: 40px;
+        transform: scale(1.8);
+        background-position: right 25px bottom 7px !important;
+
+    }
+
+    .story {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .story img {
+        height: 500px;
+    }
+
+    .story-title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .story-description {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .read-more {
+        font-size: 30px;
+    }
+
+
+    /*FOOTER*/
+    footer a {
+        transform: scale(2.3);
+        margin-left: 30px;
+    }
+
+    footer .copyright {
+        font-size: 35px;
+    }
+
+    footer .social-media {
+        padding: 50px 0;
+    }
+
+    .social-media a {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 2160px) and (max-width: 3839px) {
     /*HEADER*/
     header a {
         font-size: 25px;
