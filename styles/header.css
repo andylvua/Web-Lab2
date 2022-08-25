@@ -42,7 +42,6 @@ header a {
 
 header .logo {
     display: flex;
-    align-items: center;
 }
 
 header .login, header .register, .app .download {
@@ -57,7 +56,6 @@ header .login, header .register, .app .download {
 }
 
 header .register {
-    right: 0;
     margin-right: 10px;
     margin-left: 15px;
 }
@@ -84,21 +82,14 @@ header a.active {
     color: var(--color-text-primary);
 }
 
-.header-left {
-    display: flex;
-}
-
 .logo {
     position: absolute;
-    justify-content: center;
 }
 
 .header-right {
-    display: flex;
     position: absolute;
     right: 0;
 }
-
 
 .hamburger-menu-wrapper {
     cursor: pointer;
@@ -136,15 +127,12 @@ header a.active {
     margin-top: 0;
     right: 1%;
     border-radius: 50px;
-    overflow: hidden;
-    outline: none;
     cursor: pointer;
     background: #252525;
     transition: background-color ease 0.3s;
 }
 .theme_toggle::before {
     content: url("https://shivanarrthine.com/public/images/icons/moon.svg");
-    display: block;
     position: absolute;
     z-index: 2;
     width: 24px;
@@ -155,8 +143,6 @@ header a.active {
     border-radius: 50%;
     text-indent: 4px;
     line-height: 32px;
-    word-spacing: 37px;
-    white-space: nowrap;
     transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
 }
 .theme_toggle:checked {
